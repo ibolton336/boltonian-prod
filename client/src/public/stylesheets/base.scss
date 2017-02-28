@@ -1,0 +1,100 @@
+/*colors*/
+$DkGray1: #39393b;
+$DkGray2: #58585b;
+$MedGray2: #9e9ea2;
+$White: #ffffff;
+$PaleGray1: #e8ebf1;
+$CiscoBlue: #049fd9;
+$SageGreen: #abc233;
+$Peach: #f06d5e;
+$SoftPink: #fcfaf9;
+$DkBlue: #3b4c62;
+$OffWhite: #faf1ec;
+$Black: #000000;
+$Black2: #39393B;
+
+$Midnight: #2D3142;
+$Mint: #A9E5BB;
+$Navy: #4F5D75;
+$Lavender: #9A8F97;
+$Nude: #FCDEBE;
+
+$primary-color-dark:   #00796B;
+$primary-color:        #009688;
+$primary-color-light:  #B2DFDB;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #8BC34A;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,400italic);
+
+@import "partials/modal";
+@import "pages/pages";
+@import "components/components";
+@import "template/template";
+
+@import "mixins/font-face";
+
+
+// Body
+$font-stack: 'Open Sans', sans-serif;
+
+// Navigation
+$hover-background: #E7E7E7;
+$hover-text: #555;
+
+body {
+  margin:0px;
+  background-color: $SoftPink;
+  /*font-family: 'isabelregular';*/
+}
+
+
+.headline {
+  font-family: isabellight;
+  font-size: 90px;
+}
+
+.subhead-a {
+  font-family: isabellight;
+  font-size: 60px;
+}
+
+.subhead-b {
+  font-family: isabelthin;
+  font-size: 38px;
+}
+
+.subhead-c {
+  font-family: isabelthin;
+  font-size: 20px;
+}
+
+.db-label {
+  font-family: isabelregular;
+  font-size: 16px;
+}
+
+.db-body-copy {
+  font-family: isabellight;
+  font-size: 16px;
+}
+
+.db-tertiary-text {
+  font-family: isabellight;
+  font-size: 12px;
+}
+
+.db-button-style {
+  font-family: isabelbold;
+  font-size: 16px;
+}
+
+.db-bus-obj-style {
+  font-family: isabelbold;
+  font-size: 18px;
+
+}

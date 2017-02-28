@@ -1,0 +1,37 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Fontfabric
+ * License URL: https://www.fontspring.com/licenses/fontfabric/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'madelyn_doodles_fillregular';
+    src: url('madelyndoodlesfill-webfont.eot');
+    src: url('madelyndoodlesfill-webfont.eot?#iefix') format('embedded-opentype'),
+         url('madelyndoodlesfill-webfont.woff2') format('woff2'),
+         url('madelyndoodlesfill-webfont.woff') format('woff'),
+         url('madelyndoodlesfill-webfont.ttf') format('truetype'),
+         url('madelyndoodlesfill-webfont.svg#madelyn_doodles_fillregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

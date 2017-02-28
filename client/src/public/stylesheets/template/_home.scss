@@ -1,0 +1,48 @@
+.breathe-image{
+  width: 90%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.info-bar-about-main{
+  background-color: $DkGray2;
+  min-height: 160px;
+}
+.home-page-wp{
+  background-color: transparent;
+  min-height: 160px;
+  border-radius: 10px;
+  ul{
+    list-style: none;
+  }
+}
+
+.content-section{
+  padding-top: 250px;
+}
+
+.info-items {
+  padding: 40px ;
+  border-radius: 10px;
+}
+.blog-info-items {
+  padding: 40px ;
+  border-radius: 10px;
+}
+
+
+.post-title{
+  font-size: 40px;
+  padding: 20px 0px 2px 5px;
+}
+
+.post-content{
+  padding: 0px 0px 0px 5px;
+}
+

@@ -1,0 +1,42 @@
+.logo-container{
+  background-color: $Lavender;
+  padding: 5px 25px;
+  text-align: center;
+  margin-top: 30px;
+  h1{
+    font-family: 'madelynregular'; 
+    /*font-family: 'isabelthin'; */
+    color: rgb(252, 250, 249);
+    font-size: 70px;
+    line-height: 1em;
+    display: inline-block;
+    width: 100%;
+    font-weight: 100;
+    margin-bottom: 0px;
+
+  }
+  li{
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+}
+.header-logo{
+  font-family: 'madelynregular'
+}
+.site-tagline{
+  font-family: 'isabelthin';
+  color: $Midnight;
+  font-size: 24px;
+  line-height: 1em;
+  display: inline-block;
+  width: 100%;
+  font-weight: 100;
+   
+}
+.doodle{
+  font-family: 'madelyn_doodlesregular';
+  color: rgb(252, 250, 249);
+  font-size: 24px;
+}

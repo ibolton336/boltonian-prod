@@ -1,0 +1,26 @@
+.background-style{
+  height: auto;
+  min-height: 100%;
+}
+.fixed-header{
+  position: fixed;
+  height: 43px;
+  z-index: 99999;
+}
+
+.header-background{
+}
+
+.appbar-style-override{
+  width: 100%;
+  display: inline-block;
+  padding: 0px;
+  div:nth-of-type(1){
+    display:block !important;
+  }
+}
+
+.tabs-style-override{
+  display: block !important;
+  background-color: 'rgba(252, 250, 249, .85)' !important;
+}
