@@ -16,7 +16,6 @@ function handleActive(tab) {
 class TabComponent extends Component {
 	constructor() {
 		super();
-		console.log('in constructor', location.pathname);
 		switch (location.pathname) {
 			case '/':
 				this.state = {initalTab: 0};
