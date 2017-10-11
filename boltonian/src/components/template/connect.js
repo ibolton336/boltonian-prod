@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 import PostInfo from '../wordpress/post-info';
 
@@ -29,5 +28,5 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ConnectTemplate);
+export default ConnectTemplate;
 

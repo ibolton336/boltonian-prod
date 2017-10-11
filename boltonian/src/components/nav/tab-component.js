@@ -16,49 +16,8 @@ function handleActive(tab) {
 class TabComponent extends Component {
 	constructor() {
 		super();
-		switch (location.pathname) {
-			case '/':
-				this.state = {initalTab: 0};
-				break;
-			case '/about':
-				this.state = {initalTab: 1};
-				break;
-			case '/services':
-				this.state = {initalTab: 2};
-				break;
-			case '/blog':
-				this.state = {initalTab: 3};
-				break;
-			case '/connect':
-				this.state = {initalTab: 4};
-				break;
-			default:
-				console.log('default hit');
-				this.state = {initalTab: 0};
-				console.log('this.state.initalTab', this.state.initalTab);
-				break;
 		}
-	}
 
-	hanldleChange(value) {
-    console.log('handleChange', value);
-    switch (value) {
-      case 0:
-        return browserHistory.push('/');
-      case 1:
-        return browserHistory.push('/about');
-      case 2:
-        return browserHistory.push('/services');
-      case 3:
-        return browserHistory.push('/blog');
-      case 4:
-        return browserHistory.push('/connect');
-      case 5:
-        return browserHistory.push('/newsletter');
-      default:
-        return browserHistory.push('/');
-    }
-  }
   render() {
     const styles = {
       tabs: {

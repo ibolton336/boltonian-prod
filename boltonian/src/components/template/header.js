@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import AppBar from 'material-ui/AppBar';
 import TabComponent from '../nav/tab-component';
 import HeaderLogo from '../misc/header-logo';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 
 const quotePath = "http://159.203.108.56:8079/wp-json/wp/v2/posts?slug=quotes";
-const src = require('../../public/images/studio-header.jpg');
+const src = require('../../assets/images/studio-header.jpg');
 
 const styles = {
   appBar: {
@@ -31,9 +30,5 @@ class HeaderTemplate extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-  };
-}
 
-export default connect(mapStateToProps)(HeaderTemplate);
+export default HeaderTemplate;

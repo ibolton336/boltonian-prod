@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 import ReactPaginate from 'react-paginate';
 import BlogPostList from '../wordpress/blog-post-list';
@@ -94,6 +93,6 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(PaginationComponent);
+export default PaginationComponent;
 
 
