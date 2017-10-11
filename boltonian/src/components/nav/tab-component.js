@@ -44,10 +44,9 @@ class TabComponent extends Component {
         contentContainerStyle={styles.tabsContainer} 
         tabTemplateStyle={styles.tabTemplate}
         inkBarStyle={{background: '#00796B'}} 
-        onChange={this.hanldleChange} 
-        initialSelectedIndex={this.state.initalTab}>
+        onChange={this.handleCallToRouter}>
 				<Tab 
-          value={0}
+          value="/"
           label="home"
           style={styles.tab}
           buttonStyle={styles.tabButton}
@@ -56,7 +55,7 @@ class TabComponent extends Component {
 				</Tab>
 				<Tab 
           label="about" 
-          value={1}
+          value="/about"
           style={styles.tab}
           buttonStyle={styles.tabButton}
         >
@@ -64,7 +63,7 @@ class TabComponent extends Component {
 				</Tab>
 				<Tab 
           label="services" 
-          value={2}
+          value="/services"
           style={styles.tab}
           buttonStyle={styles.tabButton}
           >
@@ -72,7 +71,7 @@ class TabComponent extends Component {
 				</Tab>
 				<Tab 
           label="blog" 
-          value={3}
+          value="/blog"
           style={styles.tab}
           buttonStyle={styles.tabButton}
         >
@@ -80,7 +79,7 @@ class TabComponent extends Component {
 				</Tab>
 				<Tab 
           label="connect" 
-          value={4}
+          value="/connect"
           style={styles.tab}
           buttonStyle={styles.tabButton}
         >
