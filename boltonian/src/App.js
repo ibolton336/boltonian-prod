@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-// import HeaderTemplate from './template/header';
-// import FooterTemplate from './template/footer';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-// import {SoftPink, DkGray1, blueGrey500, lightWhite} from '../public/material-ui-styles/colors';
+import {SoftPink, DkGray1, blueGrey500, lightWhite} from './assets/material-ui-styles/colors';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MyApp from './components/myapp/MyApp';
 
