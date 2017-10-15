@@ -3,3 +3,20 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+/* @font-face {
+    font-family: 'madelynregular';
+    src: url('madelyn-webfont.eot');
+    src: url('madelyn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('madelyn-webfont.woff2') format('woff2'),
+         url('madelyn-webfont.woff') format('woff'),
+         url('madelyn-webfont.ttf') format('truetype'),
+         url('madelyn-webfont.svg#madelynregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+  font-family:'gillsanslight';
+  src: url('./assets/fonts/GillSansMTPro-Light.otf') format("opentype");
+}

@@ -19,7 +19,7 @@ class HeaderTemplate extends Component {
       <Grid>
         <Row>
           <Col sm={1} md={2} lg={1}/>
-          <Col sm={6} md={8} lg={10}>
+          <Col sm={10} md={8} lg={10}>
             <HeaderLogo />
             <TabComponent/>
           </Col>

@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <MyApp classname="App">
+        <MyApp >
         </MyApp>
       </MuiThemeProvider>
     );
