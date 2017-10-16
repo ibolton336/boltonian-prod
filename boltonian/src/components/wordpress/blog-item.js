@@ -5,9 +5,10 @@ import { Link } from 'react-router';
 
 class BlogItem extends Component {
   render() {
-    const title = this.props.item.title.rendered;
-    const body = this.props.item.content.rendered;
-    console.log('item name', this.props.item)
+
+    console.log('item name', this.props.title)
+    const title = this.props.title;
+    const body = this.props.body;
     return  (
       <div className="info-item">
         <div className="post-title subhead-b" dangerouslySetInnerHTML={{__html: title }} /> 

@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 import ReactPaginate from 'react-paginate';
-import BlogPostList from '../wordpress/blog-post-list';
+import BlogItem from '../wordpress/blog-item';
 import axios from 'axios';
 import $ from 'jquery';
 const updatedPath = "http://159.203.108.56:8079/wp-json/wp/v2/posts?page=";
 
 
-const styles = {
-  divStyle: {
-  },
-  container:{
-    minHeight:"500px"
-  }
-};
 
 class PaginationComponent extends Component {
   constructor(props, context) {
@@ -21,7 +14,8 @@ class PaginationComponent extends Component {
     this.state = {
       myData: [],
       pageCount: 0,
-      perPage: 10,
+      perPage: 1,
+      currentPostIndex: 0 
     };
     this.handlePageClick = this.handlePageClick.bind(this);
     this.loadPosts = this.loadPosts.bind(this);
@@ -31,38 +25,40 @@ class PaginationComponent extends Component {
     axios.get(this.props.source)
       .then(res => {
         const posts = res.data;
-        const count = Number(res.headers["x-wp-totalpages"]);
+        const count = res.data.length;
         console.log(count);
         this.setState({ myData: posts, pageCount: count});
       })
+      
+
+
   }
   componentDidMount() {
     this.loadPosts();
   }
 
-
 	handlePageClick(data){
-    let selected = data.selected + 1;
-    const currentPath = updatedPath + selected
-    console.log('curr', currentPath);
+    this.setState({ currentPostIndex:data.selected});
 
-    axios.get(currentPath)
-      .then(res => {
-        const posts = res.data;
-        const count = Number(res.headers["x-wp-totalpages"]);
-        this.setState({ myData: posts, pageCount: count});
-      })
-    //
+    // let selected = data.selected + 1;
+    // const currentPath = updatedPath + selected
+    // console.log('curr', currentPath);
 	};
 
-
   render() {
+        for(var i = 0; this.state.myData.length> i; i++){
+          if(i === this.state.currentPostIndex){
+            var currentPost = this.state.myData[i];
+            console.log('currentPost', currentPost)
+            var title = currentPost.title.rendered;
+            var body = currentPost.content.rendered;
+          }
+        }
     return (
-      <div className="home-background">
-      <Grid style={styles.container}>
+      <div>
         <Row start="xs">
           <Col xs={12}>
-            <BlogPostList data={this.state.myData}/>
+            <BlogItem title={title} body={body}/>
           </Col>
         </Row>
         <Row center="xs">
@@ -73,7 +69,7 @@ class PaginationComponent extends Component {
                 breakLabel={<a href="">...</a>}
                 breakClassName={"break-me"}
                 pageCount={this.state.pageCount}
-                marginPagesDisplayed={2}
+                marginPagesDisplayed={10}
                 pageRangeDisplayed={5}
                 onPageChange={this.handlePageClick}
                 containerClassName={"pagination"}
@@ -82,16 +78,11 @@ class PaginationComponent extends Component {
               />
           </Col>
         </Row>
-      </Grid>
-    </div>
+        </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return {
-  };
-}
 
 export default PaginationComponent;
 

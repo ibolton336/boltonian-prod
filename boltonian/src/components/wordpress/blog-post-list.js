@@ -15,8 +15,8 @@ class BlogPostList extends Component {
 
 
   render() {
-    const items = this.props.data.map((item) => {
-      return <li><BlogItem item={item} /></li>;
+    const items = this.props.data.map((item, index) => {
+      return <li key={index}><BlogItem item={item} /></li>;
     })
     return (
       <div className="home-page-wp">
