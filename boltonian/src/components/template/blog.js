@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index'
 import PostInfo from '../wordpress/post-info';
-import PaginationComponent from '../misc/pagination-component';
+// import PaginationComponent from '../misc/pagination-component';
 const serverPath = "http://159.203.108.56:8079/wp-json/wp/v2/posts?per_page=10";
 
 const styles = {
@@ -17,7 +17,7 @@ class BlogTemplate extends Component {
     return (
       <div className="home-background">
         <div className="greeting-text" />
-        <PaginationComponent source={serverPath}/>
+        {/* <PaginationComponent source={serverPath}/> */}
     </div>
     );
   }

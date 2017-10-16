@@ -4,6 +4,7 @@ import ReactPaginate from 'react-paginate';
 import BlogItem from '../wordpress/blog-item';
 import axios from 'axios';
 import $ from 'jquery';
+import './style.css';
 const updatedPath = "http://159.203.108.56:8079/wp-json/wp/v2/posts?page=";
 
 
@@ -46,14 +47,19 @@ class PaginationComponent extends Component {
 	};
 
   render() {
-        for(var i = 0; this.state.myData.length> i; i++){
-          if(i === this.state.currentPostIndex){
-            var currentPost = this.state.myData[i];
-            console.log('currentPost', currentPost)
-            var title = currentPost.title.rendered;
-            var body = currentPost.content.rendered;
-          }
-        }
+    for(var i = 0; this.state.myData.length> i; i++){
+      if(i === this.state.currentPostIndex){
+        var currentPost = this.state.myData[i];
+        console.log('currentPost', currentPost)
+        var title = currentPost.title.rendered;
+        var body = currentPost.content.rendered;
+      }
+    }
+    // const reactPaginateStyle = {
+    //   display: "inline-block",
+    //   paddingLeft: 15,
+    //   paddingRight: 15
+    // }
     return (
       <div>
         <Row start="xs">
@@ -69,7 +75,7 @@ class PaginationComponent extends Component {
                 breakLabel={<a href="">...</a>}
                 breakClassName={"break-me"}
                 pageCount={this.state.pageCount}
-                marginPagesDisplayed={10}
+                marginPagesDisplayed={2}
                 pageRangeDisplayed={5}
                 onPageChange={this.handlePageClick}
                 containerClassName={"pagination"}

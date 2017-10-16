@@ -9,11 +9,17 @@ class BlogItem extends Component {
     console.log('item name', this.props.title)
     const title = this.props.title;
     const body = this.props.body;
+    const titleStyle ={
+      textAlign: "center"
+    }
+    const contentStyle = {
+      padding: 10
+    }
     return  (
       <div className="info-item">
-        <div className="post-title subhead-b" dangerouslySetInnerHTML={{__html: title }} /> 
+        <div style={titleStyle} dangerouslySetInnerHTML={{__html: title }} /> 
         <hr/>
-        <div className="post-content cisco-body-copy" dangerouslySetInnerHTML={{__html: body }} /> 
+        <div style={contentStyle} dangerouslySetInnerHTML={{__html: body }} /> 
       </div>
     );
   }

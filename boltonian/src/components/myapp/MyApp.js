@@ -5,6 +5,7 @@ import TabComponent from '../nav/tab-component';
 import HeaderLogo from '../misc/header-logo';
 import { Grid, Row, Col } from 'react-flexbox-grid/lib/index';
 import AboutMe from '../aboutme/AboutMe';
+import Footer from '../footer/Footer';
 
 const quotePath = "http://159.203.108.56:8079/wp-json/wp/v2/posts?slug=quotes";
 
@@ -20,12 +21,13 @@ class MyApp extends Component {
     return (
       <Grid>
         <Row >
-          <Col sm={1} md={2} lg={1}/>
-          <Col sm={10} md={8} lg={10}>
+          <Col xs={1} sm={1} md={2} lg={1}/>
+          <Col xs={12} sm={10} md={8} lg={10}>
             <HeaderLogo />
-            <AboutMe/>
+            <AboutMe />
+            <Footer/>
           </Col>
-          <Col sm={1} md={2} lg={1} />
+          <Col xs={1} sm={1} md={2} lg={1} />
         </Row>
       </Grid>
     );

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'helveticalight';
   background-image: url("./assets/images/greyzz.png")
 }
 
@@ -20,6 +20,11 @@ body {
 @font-face {
   font-family:'gillsanslight';
   src: url('./assets/fonts/GillSansMTPro-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family:'helveticalight';
+  src: url('./assets/fonts/helvetica/HelveticaLTStd-Light.otf') format("opentype");
 }
 
 @font-face {
