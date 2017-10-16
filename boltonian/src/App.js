@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {SoftPink, DkGray1, blueGrey500, lightWhite} from './assets/material-ui-styles/colors';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MyApp from './components/myapp/MyApp';
 
 const muiTheme = getMuiTheme({
@@ -18,11 +16,12 @@ const muiTheme = getMuiTheme({
   }
 });
 
+
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <MyApp >
+        <MyApp>
         </MyApp>
       </MuiThemeProvider>
     );

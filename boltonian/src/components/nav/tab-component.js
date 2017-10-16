@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link, browserHistory} from 'react-router';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import HomeComponent from '../template/home';
@@ -22,8 +21,6 @@ class TabComponent extends Component {
     const styles = {
       tabs: {
         color: '#2D3142',
-        fontFamily: 'isabelregular',
-        // backgroundColor: 'rgba(252, 250, 249, .85)'
       },
       tab: {
         color: '#2D3142',
