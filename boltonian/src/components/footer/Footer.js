@@ -13,19 +13,15 @@ class Footer extends Component {
       }
 
     return (
-      <Grid>
         <Row >
           <Col xs={1} sm={1} md={2} lg={1}/>
           <Col xs={12} sm={10} md={8} lg={10}>
-            <footer>
                 <div style={footerStyle}>
                     Made with ♥ by Ian Bolton
                 </div>
-            </footer>
           </Col>
           <Col xs={1} sm={1} md={2} lg={1} />
         </Row>
-      </Grid>
 
     );
   }
